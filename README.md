@@ -1,21 +1,17 @@
 # Drive Mobility Scooter Dock.
-I built this dock for a drive mobility scooter battery. The dock uses the
-battery charger supplied with the mobility scooter to charge the battery.
+I built this dock for a drive mobility scooter battery. The dock uses the battery charger supplied with the mobility scooter to charge the battery and simply connects this to the battery.
 
-The mobility scooter model that this project was generated for is [AutoFold Elite](https://drivedevilbiss.co.uk/our-products/powered-mobility-wheelchairs/scooters/folding-scooters/autofold-elite). This same battery is used in other models of mobility scooter.
+A panel meter in the dock is used to measure the voltage and current when charging.
 
-## Battery
-The battery that the dock charges had the following label for identification.
-
-![Battery ID label](images/battery_id.png)
+The mobility scooter model that this project was generated for is the [AutoFold Elite](https://drivedevilbiss.co.uk/our-products/powered-mobility-wheelchairs/scooters/folding-scooters/autofold-elite).
 
 # Hardware
-To build the hardware you'll need to 3d print the files in the case folder. These were created using FreeCad V1.0. There are three required parts, the top, base and the pogo pin panel. I printed these using PETG-CF filament.
+I 3D printed the case parts detailed in the case folder. These were created using FreeCad V1.0. There are three required parts, the top, base and the pogo pin panel. I printed these using Bambulab PETG-CF filament on a Bambulab X1C printer.
 
 ![Assembled Dock](images/assembled_dock.png)
 
 ## Parts Required.
-Parts fitted to the 3d printed parts are shown bellow
+The non 3D printed parts fitted to the 3d printed parts are shown below.
 
 ### Panel Meter
 A link to the panel meter used can be found @ https://www.amazon.co.uk/dp/B085QDY11D/ref=twister_B09YV7KRQB?_encoding=UTF8&th=1
@@ -29,6 +25,11 @@ The XLR connector used can be found @ https://www.amazon.co.uk/dp/B07S6J8WVD?ref
 
 ![XLR Connector](images/xlr_connector.png)
 
+### Fuse Holder
+The 20mm panel mount fuse holder can be found @ https://www.amazon.co.uk/Panel-Mount-Chassis-Holder-5x20mm/dp/B00XLSUOUO
+
+![Fuse Holder](images/fuse_holder.png)
+
 ### H113 Pogo pins from AliExpress
 https://www.aliexpress.com/item/1005004524674158.html?spm=a2g0o.order_list.order_list_main.5.4b9118028GBk9F
 
@@ -39,8 +40,18 @@ The parts were connected as detailed in the following schematic.
 
 ![Schematic](images/schematic.png)
 
-Four M3 brass thread inserts were added to the 3D printed base part to allow four countersunk screws to be fitted (two on each side).
 
+!!!
+
+It is important that the pogo pins are fitted to the base panel in the dock at the correct height. They should be fitted such that when compressed to 6mm (panel surface to top of pogo pin) there is about 1.5mm travel left on the pogo pin.
+
+Four M3 brass thread inserts were added to the 3D printed base part to allow four countersunk screws to be fitted (two on each side). These hold the top to the base.
+
+
+## Battery
+The battery that the dock charges had the following label for identification.
+
+![Battery ID label](images/battery_id.png)
 
 
 
