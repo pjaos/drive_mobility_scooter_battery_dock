@@ -248,6 +248,139 @@
 				)
 			)
 		)
+		(symbol "Diode:SMAJ60A"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMAJ60A"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "400W unidirectional Transient Voltage Suppressor, 60.0Vr, SMA(DO-214AC)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "unidirectional diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMAJ60A_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMAJ60A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "pja_1:XLR3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -551,6 +684,18 @@
 		(uuid "0f691487-8b1d-4306-816d-7b8a22e043f8")
 	)
 	(junction
+		(at 62.23 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29d77a6e-4999-4bb6-ba6c-5da2c12bfa90")
+	)
+	(junction
+		(at 41.91 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6633364d-a0e5-4faf-b749-aff19a0dec9c")
+	)
+	(junction
 		(at 151.13 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -578,7 +723,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 104.14) (xy 31.75 104.14)
+			(xy 31.75 104.14) (xy 41.91 104.14)
 		)
 		(stroke
 			(width 0)
@@ -615,6 +760,16 @@
 			(type default)
 		)
 		(uuid "289bb293-8715-4bee-9fc4-dfcdad02d8de")
+	)
+	(wire
+		(pts
+			(xy 55.88 104.14) (xy 62.23 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "390ce110-5c2b-4044-bb85-af604457a034")
 	)
 	(wire
 		(pts
@@ -718,6 +873,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 104.14) (xy 48.26 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25a26a9-6e6d-4090-b66f-bd5dd2dbe0ea")
+	)
+	(wire
+		(pts
 			(xy 205.74 87.63) (xy 205.74 63.5)
 		)
 		(stroke
@@ -788,9 +953,9 @@
 		)
 		(uuid "1c2996b4-e5f6-4d40-b37e-74031a7ac0d7")
 	)
-	(text "!!! \nMake sure the correct pins are used from the \ncharger that was supplied with the drive \nmobility scooter."
+	(text "!!! \nMake sure the correct XLR connector pins \nare used from the charger that was supplied \nwith the mobility scooter.\n\nThe SMBJ33A transient voltage supression diode is\nsoldered between the pins of the XLR connector with\nthe cathode to the +ve supply pin."
 		(exclude_from_sim no)
-		(at 33.02 123.698 0)
+		(at 32.766 132.588 0)
 		(effects
 			(font
 				(size 4 4)
@@ -1227,6 +1392,74 @@
 			(project "drive_mobility_scooter_battery_dock"
 				(path "/b0f3f214-a008-4b65-bd75-e72926a96c4e"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SMAJ60A")
+		(at 52.07 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad7b0802-0876-4133-b219-b4a4e1d73546")
+		(property "Reference" "D1"
+			(at 52.07 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMBJ33A"
+			(at 52.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 52.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at 50.8 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 60.0Vr, SMA(DO-214AC)"
+			(at 52.07 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22e6a98f-e0e9-45d2-ba37-a27b2d1f69ff")
+		)
+		(pin "2"
+			(uuid "544dd3a6-19c3-4884-ad12-e5d322e26f78")
+		)
+		(instances
+			(project ""
+				(path "/b0f3f214-a008-4b65-bd75-e72926a96c4e"
+					(reference "D1")
 					(unit 1)
 				)
 			)
