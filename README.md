@@ -1,9 +1,9 @@
 # Drive Mobility Scooter Dock.
-I built this dock for a drive mobility scooter battery. The dock uses the battery charger supplied with the mobility scooter to charge the battery and simply connects this to the battery.
+I built this dock for a drive mobility scooter battery. The dock uses the battery charger supplied with the mobility scooter to charge the battery.
 
-A panel meter in the dock is used to measure the voltage and current when charging.
+A panel meter in the dock is used to show the voltage and current when charging.
 
-The mobility scooter model that this project was generated for is the [AutoFold Elite](https://drivedevilbiss.co.uk/our-products/powered-mobility-wheelchairs/scooters/folding-scooters/autofold-elite).
+The mobility scooter model that this project was generated for, is the [AutoFold Elite](https://drivedevilbiss.co.uk/our-products/powered-mobility-wheelchairs/scooters/folding-scooters/autofold-elite).
 
 # Hardware
 I 3D printed the case parts detailed in the case folder. These were created using FreeCad V1.0. There are three required parts, the top, base and the pogo pin panel. I printed these using Bambulab PETG-CF filament on a Bambulab X1C printer.
@@ -45,7 +45,7 @@ The parts were connected as detailed in the following schematic.
 
 It is important that the pogo pins are fitted to the base panel in the dock at the correct height. They should be fitted such that when compressed to 6mm (panel surface to top of pogo pin) there is about 1.5mm travel left on the pogo pin.
 
-Four M3 brass thread inserts were added to the 3D printed base part to allow four countersunk screws to be fitted (two on each side). These hold the top to the base.
+Four M3 brass thread inserts were added to the 3D printed base part to allow four M3 x 10mm countersunk screws to be fitted (two on each side). I used black nylon screws. These hold the top to the base.
 
 
 ## Battery
