@@ -11,7 +11,7 @@ I 3D printed the case parts detailed in the case folder. These were created usin
 ![Assembled Dock](images/assembled_dock.png)
 
 ## Parts Required.
-The non 3D printed parts fitted to the 3d printed parts are shown below.
+As well as the 3D printed parts the following parts are also required.
 
 ### Panel Meter
 The panel meter is available on amazon and ebay.
